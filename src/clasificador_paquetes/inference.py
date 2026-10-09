@@ -61,7 +61,7 @@ def guardar_csv(resultados: list[Salida], ruta: Path) -> None:
         escritor.writeheader()
 
         for i in resultados:
-            escritor.writerows([i.dump()])
+            escritor.writerows(i.dump())
     
         
 
