@@ -67,8 +67,10 @@ def guardar_csv(resultados: list[Salida], ruta: Path) -> None:
 
 
 def ejecutar(entrada: Path, modelo: Path, salida: Path) -> None:
-    # TODO
-    raise NotImplementedError
+    modelo = cargar_modelo(modelo)
+    entradas = leer_csv(entrada)
+    
+
 
 
 if __name__ == "__main__":
